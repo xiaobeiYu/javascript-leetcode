@@ -6,12 +6,7 @@ const myPow = function (x, n) {
         return x;
     if (n === -1)
         return 1/x;
-    
-    /**
-     * To avoid exceeding time limit, good practice:
-     *  When there is a duplicated expression, store it in a variable to avoid 
-     *      calculate it mutiple times.
-     */
+
     let half_pow = myPow(x, parseInt(n/2));
     
     if (n % 2 === 0) {
